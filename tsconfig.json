@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                         // Transpilação para o JavaScript mais moderno
+    "module": "CommonJS",                       // Padrão usado em Node.js
+    "outDir": "dist",                           // Saída dos arquivos compilados
+    "rootDir": ".",                             // Raiz do projeto
+    "strict": true,                             // Ativa todos os checks de tipagem rigorosa
+    "esModuleInterop": true,                    // Permite usar módulos CommonJS como ESModules
+    "forceConsistentCasingInFileNames": true,   // Evita problemas de case sensitive em importações
+    "skipLibCheck": true                        // Pula checagem de tipos das bibliotecas (melhora performance de build)
+  },
+  "include": ["tests/**/*.ts", "playwright.config.ts"]  // Inclui os arquivos de teste e o config do Playwright
+}
